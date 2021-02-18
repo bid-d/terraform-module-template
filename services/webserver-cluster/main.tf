@@ -35,7 +35,7 @@ resource "aws_security_group" "elb" {
 }
 
 resource "aws_launch_configuration" "launch_config" {
-  image_id        = "ami-09a6a7e49bd29554b"
+  image_id        = "ami-0002133c28152151b"
   instance_type   = var.instance_type
   key_name = "bidd-local"
   security_groups = [aws_security_group.ec2_security.id]
