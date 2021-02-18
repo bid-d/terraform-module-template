@@ -4,6 +4,12 @@ variable "server_port" {
   default     = 8080
 }
 
+variable "ssh_port" {
+  type = number
+  description = "Port for ssh"
+  default     = 22
+}
+
 variable "elb_port" {
   type = number
   description = "Port for connecting to ELB"
